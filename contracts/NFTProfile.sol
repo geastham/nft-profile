@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 /**
  * @dev Implementation of a simple NFT, using Tableland to host metadata in a two table setup.
  */
-contract TwoTablesNFT is ERC721 {
+contract NFTProfile is ERC721 {
     // For demonstration purposes, some of these storage variables are set as `public`
     // This is not necessarily a best practice but makes it easy to call public getters
 
@@ -36,13 +36,16 @@ contract TwoTablesNFT is ERC721 {
         string memory baseURI,
         string memory _mainTable,
         string memory _attributesTable
-    ) ERC721("TwoTablesNFT", "TTNFT") {
+    ) ERC721("NFTProfile", "NFTP") {
         // Initialize with token counter at zero
         _tokenIdCounter = 0;
+
         // The max number of NFTs in this tutorial
-        _maxTokens = 2;
+        _maxTokens = 100;
+
         // Set the baseURI to the Tableland gateway
         baseURIString = baseURI;
+
         // Set the table names
         mainTable = _mainTable;
         attributesTable = _attributesTable;
