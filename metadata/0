@@ -3,13 +3,13 @@
 	"description": "Chief Data Officer | AI Architect | eCommerce Advisor & Investor",
 	"image": "",
 	"attributes": [
-		{
-			"trait_type": "Type",
-			"value": "Avatar"
-		},
-		{
-			"trait_type": "Use",
-			"value": "Personal"
-		}
+	  {
+		"trait_type": "Type",
+		"value": "Avatar"
+	  },
+	  {
+		"trait_type": "Use",
+		"value": "Personal"
+	  }
 	]
-}
+  }

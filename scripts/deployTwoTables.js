@@ -112,7 +112,7 @@ async function main() {
 
 	// Log the deployed address and call the getter on `baseURIString` (for demonstration purposes)
 	console.log(`\NFTProfile contract deployed on ${network.name} at: ${nftProfile.address}`)
-	const baseURI = await twoTablesNFT.baseURIString()
+	const baseURI = await nftProfile.baseURIString()
 	console.log(`NFTProfile is using baseURI: ${baseURI}`)
 
 	// For demonstration purposes, mint a token so that `tokenURI` can be called
